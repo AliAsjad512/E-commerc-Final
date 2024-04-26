@@ -10,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
 model Addresses {
   id         Int       @id @default(autoincrement())
   user_id    String    @unique @db.Uuid
